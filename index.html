@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bala | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h2>Balamurugesh Nagaraj</h2>
+        </div>
+    
+        <!-- Desktop Navigation -->
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
+    
+        <!-- Hamburger Icon for Mobile -->
+        <button class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+    
+        <!-- Mobile Sidebar Navigation -->
+        <div class="mobile-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="circle"></div>
+        <img src="profile-removebg-preview.png" alt="Bala's Profile Picture" class="profile-img">
+        <h1>BALAMURUGESH NAGARAJ</h1>
+        <p>Aspiring Data Analyst | SQL | Python | Power BI</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </header>
+    
+    <!-- About Section -->
+    <!-- About Section -->
+<section class="section" id="about">
+    <div class="about-container">
+        <!-- About Content (Changes on Hover) -->
+        <div class="about-text" id="about-text">
+            <h2>About Me</h2>
+            <p id="about-description">
+                Hi, I'm <strong>Balamurugesh Nagaraj</strong>, a passionate <strong>Data Analyst</strong> skilled in 
+                <strong>SQL, Python, and Power BI</strong>. I specialize in <strong>data transformation, visualization, and business intelligence</strong>, 
+                helping organizations make <strong>data-driven decisions</strong>.
+            </p>
+            <p id="about-extra">
+                Currently pursuing a <strong>B.E. in Computer Science Engineering</strong> at <strong>St. Mother Theresa Engineering College</strong>, 
+                I have developed expertise in <strong>database management, Python programming, and statistical analysis</strong>. 
+                With a keen eye for <strong>problem-solving and automation</strong>, I am always eager to apply 
+                <strong>data analytics</strong> to real-world business challenges.
+            </p>
+        </div>
+
+        <!-- Image Cards (Hover to Change Content & Background) -->
+        <div class="about-images">
+            <div class="about-card professional active" id="professional-card" onmouseover="updateAbout('professional')">
+                <img src="prof.jpg" alt="Professional Image">
+            </div>
+            <div class="about-card soft-skills" id="soft-skills-card" onmouseover="updateAbout('softskills')">
+                <img src="soft.jpg" alt="Soft Skills Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Projects Section -->
+<section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <div class="project-front">
+                <img src="retail.png" alt="Retail Sales Data Analysis">
+                <h3>Retail Sales Data Analysis</h3>
+            </div>
+            <div class="project-back">
+                <p>Analyzed customer trends, top-selling products, and revenue patterns using SQL & Power BI.</p>
+                <a href="https://github.com/yourgithub/retail-sales-analysis" target="_blank" class="btn">GitHub</a>
+                <a href="https://yourlivedemo.com" target="_blank" class="btn">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <div class="project-front">
+                <img src="employe.png" alt="Employee Attrition Analysis">
+                <h3>Employee Attrition Analysis</h3>
+            </div>
+            <div class="project-back">
+                <p>Identified key factors affecting employee turnover using Python & Excel visualization.</p>
+                <a href="https://github.com/yourgithub/employee-attrition" target="_blank" class="btn">GitHub</a>
+                <a href="https://yourlivedemo.com" target="_blank" class="btn">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <div class="project-front">
+                <img src="customer-segmentation.jpg" alt="Customer Segmentation">
+                <h3>Customer Segmentation</h3>
+            </div>
+            <div class="project-back">
+                <p>Used K-Means Clustering to segment customers based on purchasing behavior.</p>
+                <a href="https://github.com/yourgithub/customer-segmentation" target="_blank" class="btn">GitHub</a>
+                <a href="https://yourlivedemo.com" target="_blank" class="btn">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+            <div class="project-front">
+                <img src="bank-loan.png" alt="Bank Loan Default Prediction">
+                <h3>Bank Loan Default Prediction</h3>
+            </div>
+            <div class="project-back">
+                <p>Built ML models to predict loan defaults based on customer financial history.</p>
+                <a href="https://github.com/yourgithub/bank-loan-prediction" target="_blank" class="btn">GitHub</a>
+                <a href="https://yourlivedemo.com" target="_blank" class="btn">Live Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- View More Button -->
+    <div class="view-more">
+        <a href="https://github.com/yourgithub" target="_blank" class="btn">View More Projects</a>
+    </div>
+</section>
+
+
+    <!-- Certifications Section -->
+<section class="section" id="certifications">
+    <h2>Certifications</h2>
+    <div class="certifications-container">
+        
+        <!-- Certificate 1 -->
+        <div class="cert-card">
+            <div class="cert-card-inner">
+                <div class="cert-card-front">
+                    <img src="images/Google Professional Certificate_page-0001.jpg" alt="Google Data Analytics">
+                </div>
+                <div class="cert-card-back">
+                    <h3>Google Data Analytics</h3>
+                    <p>Earned from Coursera - Covers SQL, Python, Data Cleaning, and Visualization.</p>
+                    <a href="https://www.coursera.org/account/accomplishments" target="_blank" class="btn">Verify</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="cert-card">
+            <div class="cert-card-inner">
+                <div class="cert-card-front">
+                    <img src="images/Kaggle Python certificate_page-0001.jpg" alt="Kaggle Python Certification">
+                </div>
+                <div class="cert-card-back">
+                    <h3>Kaggle Python</h3>
+                    <p>Certified in Python for Data Science.</p>
+                    <a href="https://www.kaggle.com/certificates" target="_blank" class="btn">Verify</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="cert-card">
+            <div class="cert-card-inner">
+                <div class="cert-card-front">
+                    <img src="images/sql-cert.jpg" alt="SQL Certification">
+                </div>
+                <div class="cert-card-back">
+                    <h3>SQL Certification</h3>
+                    <p>SQL Data Manipulation, Query Optimization, and Joins.</p>
+                    <a href="#" target="_blank" class="btn">Verify</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certificate 4 -->
+        <div class="cert-card">
+            <div class="cert-card-inner">
+                <div class="cert-card-front">
+                    <img src="images/Powerbi.png" alt="Power BI Certification">
+                </div>
+                <div class="cert-card-back">
+                    <h3>Power BI Certification</h3>
+                    <p>Data Visualization, Report Building, and Business Insights.</p>
+                    <a href="#" target="_blank" class="btn">Verify</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certificate 5 -->
+        <div class="cert-card">
+            <div class="cert-card-inner">
+                <div class="cert-card-front">
+                    <img src="images/Coursera 7722PT4S9HH2_page-0001.jpg" alt="Excel Certification">
+                </div>
+                <div class="cert-card-back">
+                    <h3>Excel Certification</h3>
+                    <p>Advanced Excel Formulas, Pivot Tables, and Data Analysis.</p>
+                    <a href="#" target="_blank" class="btn">Verify</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certificate 6 -->
+        <div class="cert-card">
+            <div class="cert-card-inner">
+                <div class="cert-card-front">
+                    <img src="images/Git Certificate_page-0001.jpg" alt="Git Certification">
+                </div>
+                <div class="cert-card-back">
+                    <h3>Git Certification</h3>
+                    <p>Version Control, Branching, and GitHub Workflows.</p>
+                    <a href="#" target="_blank" class="btn">Verify</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        
+        <!-- Skill 1 -->
+        <div class="skill-card" id="sql-card" onmouseover="showSkill('sql')" onmouseout="hideSkill('sql')">
+            <img src="images/Sql.png" alt="SQL" class="skill-icon">
+            <h3>SQL</h3>
+            <div class="progress-container" id="sql-bar-container" style="display: none;">
+                <progress id="sql-bar" class="skill-progress" value="0" max="100"></progress>
+                <span id="sql-level" style="display: none;">85%</span>
+            </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-card" id="python-card" onmouseover="showSkill('python')" onmouseout="hideSkill('python')">
+            <img src="images/Python.png" alt="Python" class="skill-icon">
+            <h3>Python</h3>
+            <div class="progress-container" id="python-bar-container" style="display: none;">
+                <progress id="python-bar" class="skill-progress" value="0" max="100"></progress>
+                <span id="python-level" style="display: none;">90%</span>
+            </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill-card" id="powerbi-card" onmouseover="showSkill('powerbi')" onmouseout="hideSkill('powerbi')">
+            <img src="images/Powerbi.png" alt="Power BI" class="skill-icon">
+            <h3>Power BI</h3>
+            <div class="progress-container" id="powerbi-bar-container" style="display: none;">
+                <progress id="powerbi-bar" class="skill-progress" value="0" max="100"></progress>
+                <span id="powerbi-level" style="display: none;">80%</span>
+            </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-card" id="excel-card" onmouseover="showSkill('excel')" onmouseout="hideSkill('excel')">
+            <img src="images/Excel.png" alt="Excel" class="skill-icon">
+            <h3>Excel</h3>
+            <div class="progress-container" id="excel-bar-container" style="display: none;">
+                <progress id="excel-bar" class="skill-progress" value="0" max="100"></progress>
+                <span id="excel-level" style="display: none;">75%</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    
+
+    <!-- Footer -->
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="contact-info">
+            <p>📞 <a href="tel:+919629099832">+91 96290 99832</a> | 
+               ✉️ <a href="mailto:balamurugeshn2004@gmail.com">balamurugeshn2004@gmail.com</a> | 
+               🔗 <a href="https://github.com/Balamurugesh-Nagaraj" target="_blank">GitHub</a> | 
+               🔗 <a href="www.linkedin.com/in/balamurugesh-nagaraj" target="_blank">LinkedIn</a> | 
+               📍 Tirunelveli, Tamil Nadu, India</p>
+        </div>
+        <a href="assests/Resume_Balamurugesh_Nagaraj.pdf" download="Balamurugesh_Nagaraj_Resume.pdf">
+            <button class="download-btn">Download Resume</button>
+        </a>
+    </div>
+    <p class="copyright">&copy; 2025 Bala | All Rights Reserved</p>
+</footer>
+
+
+
+
+</body>
+</html>
