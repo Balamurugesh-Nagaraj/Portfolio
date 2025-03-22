@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* General Styling */
 body {
     font-family: 'Poppins', sans-serif;
@@ -891,3 +892,898 @@ body, html {
         width: 90%;
     }
 }
+=======
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fdfdfd;
+}
+
+/* Base Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Desktop Navigation */
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00a8e8;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    right: 40px;
+    border: none;
+    outline: none;
+    z-index: 1001;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* Mobile Sidebar Navigation */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: rgba(27, 38, 44, 0.95);
+    padding-top: 60px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto; /* Prevent scrolling issues */
+}
+
+.mobile-menu a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.mobile-menu a:hover {
+    background: rgba(0, 168, 232, 0.2);
+}
+
+/* Show Mobile Menu When Active */
+.mobile-menu.active {
+    transform: translateX(0);
+}
+
+/* Fix Horizontal Scrolling Issue */
+body, html {
+    overflow-x: hidden; /* Prevent unwanted horizontal scrolling */
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide desktop menu */
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 70px; /* Move slightly left (Increase value for more shift) */
+        top: 35px;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        z-index: 100;
+    }
+
+    .mobile-menu {
+        width: 35%; /* Make sidebar cover full screen on small devices */
+    }
+}
+
+
+/* Hero Section with Bluish Gradient */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 50%, #bcccdc 100%);
+    border-radius: 15px;
+}
+/* Circular Background */
+.hero .profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 30px auto; /* Centers the image */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Text */
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #1b262c;
+}
+
+/* Button */
+.hero .btn {
+    background: linear-gradient(135deg, #4a90e2, #0072ff);
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.hero .btn:hover {
+    background: #005f8d;
+    transform: scale(1.05);
+}
+
+/* Section Styling */
+.section {
+    text-align: center;
+    margin: 50px 0;
+    padding: 50px 20px;
+    background: #e3edf7;
+    border-radius: 12px;
+}
+/* About Section Background */
+#about {
+    background: url('prof.jpg') no-repeat center center/cover; /* Default background */
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Glass Effect Container */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 90%;
+    transition: background 0.5s ease-in-out;
+}
+
+/* About Text */
+.about-text {
+    flex: 1;
+    padding-right: 30px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2c3e50;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #0072ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Image Cards */
+.about-images {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+}
+
+.about-card {
+    width: 150px;
+    height: 180px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.about-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hover Effect for Scaling */
+.about-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 📌 Responsive Design for Smaller Screens */
+@media screen and (max-width: 900px) {
+    /* Stack elements for mobile */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Adjust text size for smaller screens */
+    .about-text {
+        padding-right: 0;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    /* Resize image cards for mobile */
+    .about-images {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .about-card {
+        width: 120px;
+        height: 150px;
+    }
+
+    .about-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Background image transition fix for mobile */
+    #about {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* 📌 Extra Small Screens (Less than 600px) */
+@media screen and (max-width: 600px) {
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    .about-card {
+        width: 100px;
+        height: 130px;
+    }
+
+    .about-container {
+        padding: 15px;
+    }
+}
+
+
+
+/* Cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 1.7rem;
+    margin-top: 12px;
+    color: #1b262c;
+}
+
+.card p {
+    color: #555;
+}
+
+/* Project Section */
+#projects {
+    background: url('projects-bg.jpg') no-repeat center center/cover;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Project Container */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Project Card */
+.project-card {
+    width: 300px;
+    height: 350px;
+    position: relative;
+    perspective: 1000px;
+}
+
+/* Card Front & Back */
+.project-front, .project-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Front Side */
+.project-front {
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project-front img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-front h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Back Side */
+.project-back {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: rotateY(180deg);
+}
+
+/* Slide Animation */
+.project-card:hover .project-front {
+    transform: rotateY(-180deg);
+}
+
+.project-card:hover .project-back {
+    transform: rotateY(0deg);
+}
+
+/* Buttons */
+.btn {
+    background: #0072ff;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #005bb5;
+}
+
+/* View More Button */
+.view-more {
+    margin-top: 30px;
+}
+
+/* 📌 Project Section */
+#projects {
+    background: url('projects.jpg') no-repeat center center/cover;
+    padding: 80px 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* 📌 Project Cards Container */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;          /* Prevent overflow */
+    margin: 0 auto;
+    position: relative;
+    gap: 60px;
+}
+
+/* 📌 Project Card - Glassmorphic Effect */
+.project-card {
+    width: 300px;
+    height: 350px;
+    position: relative;
+    perspective: 1000px;
+}
+
+/* 📌 Front & Back of Card */
+.project-front, .project-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.1);
+    transition: transform 0.6s ease-in-out;
+}
+
+/* 📌 Glassmorphic Front */
+.project-front {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* 📌 Image Styling */
+.project-front img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* 📌 Title */
+.project-front h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+/* 📌 Back Side (Glass Effect) */
+.project-back {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+}
+
+/* 📌 Slide Animation */
+.project-card:hover .project-front {
+    transform: rotateY(-180deg);
+}
+
+.project-card:hover .project-back {
+    transform: rotateY(0deg);
+}
+
+/* 📌 Buttons */
+.btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* 📌 View More Button */
+.view-more {
+    margin-top: 70px;
+}
+
+/* 📌 Responsive Design */
+@media screen and (max-width: 900px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project-card {
+        width: 100%;
+    }
+
+    .btn {
+        padding: 8px 12px;
+    }
+}
+
+/* 📌 Certifications Section */
+#certifications {
+    background: url('images/achievement-certificates-1.png') no-repeat center center/cover;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* 📌 Container - Responsive Grid */
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* 📌 Certification Card */
+.cert-card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+/* 📌 Inner Flip Mechanism */
+.cert-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* 📌 Flip Effect */
+.cert-card:hover .cert-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* 📌 Front & Back Sides */
+.cert-card-front, .cert-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 📌 Front Side */
+.cert-card-front {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cert-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+/* 📌 Back Side */
+.cert-card-back {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+}
+
+/* 📌 Title & Description */
+.cert-card-back h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.cert-card-back p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* 📌 Button */
+.btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+/* 📌 Skills Section */
+#skills {
+    background: url('images/skill-bg.jpg') no-repeat center center/cover;  /* Add background image or color */
+    padding: 80px 20px;
+    text-align: center;
+    background-size: cover;  /* Ensure the background covers the full section */
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a dark overlay for better contrast */
+    color: white;  /* Ensure the text is visible on dark backgrounds */
+}
+
+/* 📌 Skills Container */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Centers the skill cards */
+    gap: 30px;
+    max-width: 1200px;  /* Optional: Set a maximum width for the container */
+    margin: 0 auto;  /* Centers the container horizontally */
+}
+
+/* 📌 Skill Card */
+.skill-card {
+    width: 200px;
+    height: 160px;  /* Adjusted height to fit the progress bar */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* 📌 Icon Inside the Card */
+.skill-card img {
+    width: 60px;  /* Adjust size of the icon */
+    height: 60px;  /* Adjust size of the icon */
+    object-fit: contain;  /* Ensures the image fits properly */
+    margin-bottom: 10px;  /* Space between icon and progress bar */
+}
+
+/* 📌 Hover Effect */
+.skill-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.3);
+}
+
+/* 📌 Progress Bar Style */
+.skill-progress {
+    width: 100%;
+    height: 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    appearance: none;
+}
+
+/* 📌 Progress Bar Color */
+.skill-progress::-webkit-progress-bar {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.skill-progress::-webkit-progress-value {
+    background: linear-gradient(to right, #ff7f50, #ff6347);  /* Custom gradient */
+    border-radius: 6px;
+}
+
+/* 📌 Skill Level Display */
+.progress-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* 📌 Skill Level Text */
+.progress-container span {
+    display: block;
+    font-size: 1rem;
+    color: white;
+    margin-top: 5px;
+}
+
+/* 📌 Responsive Design */
+@media screen and (max-width: 900px) {
+    .skills-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skill-card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skill-card {
+        width: 90%;
+    }
+}
+
+
+/* Footer Background */
+.footer {
+    background: rgba(0, 0, 0, 0.8); /* Dark background */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Contact Info - Inline Layout */
+.contact-info p {
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;  /* Wrap to next line if needed */
+    justify-content: center;
+    gap: 10px; /* Space between items */
+}
+
+.contact-info a {
+    color: #00c3ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    color: #ff4b8b;
+}
+
+/* Glassy Button */
+.download-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+/* Copyright */
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 15px;
+    }
+    
+        .nav-links {
+            display: none;
+        }
+    
+        .hamburger {
+            display: block;
+        }
+    
+
+    .hero .circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .hero .profile-img {
+        width: 130px;
+        height: 130px;
+        top: -35px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .skill-bar {
+        width: 90%;
+    }
+}
+>>>>>>> cd0414e (Add files via upload)
